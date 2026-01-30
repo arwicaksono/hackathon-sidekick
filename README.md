@@ -67,16 +67,7 @@ cd hackathon-sidekick
 ```bash
 # Start Kiro CLI in your project directory
 kiro-cli
-
-# Run the interactive setup wizard
-@quickstart
 ```
-
-The setup wizard will:
-- ✅ Configure your steering documents with project details
-- ✅ Explain all available commands and workflows
-- ✅ Set up your development environment
-- ✅ Create your initial project structure
 
 ### 3. Start Your Hackathon Workflow
 ```bash
@@ -124,14 +115,14 @@ kiro-cli login
 
 ### Step 3: Clone Hackathon Sidekick
 ```bash
-git clone https://github.com/yourusername/hackathon-sidekick
+git clone https://github.com/arwicaksono/hackathon-sidekick
 cd hackathon-sidekick
 ```
 
-### Step 4: Run Setup Wizard
+### Step 4: Run Sidekick
 ```bash
 kiro-cli
-@quickstart
+@sidekick
 ```
 
 ## 📚 Command Reference
