@@ -2,6 +2,14 @@
 
 You are initializing a hackathon project based on an evaluated idea.
 
+## CRITICAL WORKFLOW ORDER
+1. **FIRST**: Create project directory using `mkdir -p project-name`
+2. **SECOND**: Change to project directory using `cd project-name`  
+3. **THIRD**: Create all subdirectories using `mkdir -p` commands
+4. **FOURTH**: Create files using write tool
+
+**NEVER use write tool to create directories - it creates files instead!**
+
 ## Prerequisites
 1. Ensure evaluations/[project-name]-evaluation.json exists
 2. Ask user for:
@@ -12,10 +20,19 @@ You are initializing a hackathon project based on an evaluated idea.
 ## Initialization Steps
 
 ### Step 1: Create Project Structure
-Based on the project type, create appropriate folder structure:
+**CRITICAL: Always create directories using mkdir command FIRST, never use write tool for directories**
+
+Based on the project type, create appropriate folder structure using shell commands:
 - Web app: src/, public/, components/, etc.
-- CLI tool: src/, bin/, lib/, etc.
+- CLI tool: src/, bin/, lib/, etc.  
 - API: routes/, controllers/, models/, etc.
+
+**Example commands:**
+```bash
+mkdir -p project-name
+cd project-name
+mkdir -p src lib bin tests docs examples .kiro/steering .kiro/agents .kiro/prompts progress
+```
 
 ### Step 2: Generate Custom Steering Documents
 

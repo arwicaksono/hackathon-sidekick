@@ -354,3 +354,19 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Built with ❤️ using [Kiro CLI](https://kiro.dev) for the Dynamous Kiro Hackathon**
 
 *Transform your hackathon ideas into winning submissions with AI-powered development assistance!* 🚀
+
+---
+
+## ⚠️ Disclaimer
+
+**Important Notice**: Hackathon Sidekick is a development assistance tool designed to help improve your hackathon workflow, documentation, and project organization. While this tool provides structured guidance, evaluation frameworks, and automation to enhance your development process, **it does not guarantee winning any hackathon or competition**.
+
+Success in hackathons depends on many factors including:
+- Quality and originality of your idea
+- Technical execution and implementation
+- Team collaboration and skills
+- Presentation and communication
+- Competition level and judging criteria
+- Time management and project scope
+
+This tool is intended to maximize your potential for success by providing best practices, systematic workflows, and professional documentation standards. Your results will ultimately depend on your effort, creativity, and execution of your project idea.
