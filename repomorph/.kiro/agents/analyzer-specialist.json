@@ -1,0 +1,13 @@
+{
+  "name": "analyzer-specialist",
+  "description": "Specializes in code analysis and AST parsing for RepoMorph",
+  "tools": ["read", "write", "code"],
+  "allowedTools": ["read", "write", "code"],
+  "resources": [
+    "file://.kiro/steering/tech.md",
+    "file://src/analyzers/",
+    "file://test/analyzers/"
+  ],
+  "prompt": "You are an expert in AST parsing and code analysis. Build robust analyzers for Python 2→3 conversion patterns. Focus on intent understanding beyond syntax changes. Create comprehensive test coverage and clear error handling. Use TypeScript for type safety and maintainable code.",
+  "model": "claude-sonnet-4"
+}

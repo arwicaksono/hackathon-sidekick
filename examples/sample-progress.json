@@ -1,0 +1,321 @@
+{
+  "project": {
+    "name": "TaskFlow - Smart Project Management",
+    "startDate": "2026-01-05T09:00:00Z",
+    "currentDate": "2026-01-15T16:30:00Z",
+    "daysElapsed": 10,
+    "daysRemaining": 8,
+    "totalHackathonDays": 18
+  },
+  "timeTracking": {
+    "totalHoursSpent": 47.5,
+    "averageHoursPerDay": 4.75,
+    "targetHoursPerDay": 5.0,
+    "projectedTotalHours": 90,
+    "hoursRemaining": 42.5,
+    "dailyBreakdown": [
+      {
+        "date": "2026-01-05",
+        "hours": 6.0,
+        "focus": "Project setup and planning",
+        "kiroUsage": 5.5
+      },
+      {
+        "date": "2026-01-06",
+        "hours": 4.5,
+        "focus": "Backend API development",
+        "kiroUsage": 4.0
+      },
+      {
+        "date": "2026-01-07",
+        "hours": 5.0,
+        "focus": "Database schema and models",
+        "kiroUsage": 4.5
+      },
+      {
+        "date": "2026-01-08",
+        "hours": 3.5,
+        "focus": "Frontend component development",
+        "kiroUsage": 3.0
+      },
+      {
+        "date": "2026-01-09",
+        "hours": 5.5,
+        "focus": "User authentication system",
+        "kiroUsage": 5.0
+      },
+      {
+        "date": "2026-01-10",
+        "hours": 4.0,
+        "focus": "Task management features",
+        "kiroUsage": 3.5
+      },
+      {
+        "date": "2026-01-11",
+        "hours": 6.0,
+        "focus": "Real-time updates and WebSocket",
+        "kiroUsage": 5.5
+      },
+      {
+        "date": "2026-01-12",
+        "hours": 4.5,
+        "focus": "UI/UX improvements",
+        "kiroUsage": 3.0
+      },
+      {
+        "date": "2026-01-13",
+        "hours": 3.0,
+        "focus": "Bug fixes and testing",
+        "kiroUsage": 2.5
+      },
+      {
+        "date": "2026-01-14",
+        "hours": 5.5,
+        "focus": "Documentation and deployment",
+        "kiroUsage": 4.0
+      }
+    ]
+  },
+  "featureProgress": {
+    "totalFeatures": 12,
+    "completedFeatures": 8,
+    "inProgressFeatures": 2,
+    "plannedFeatures": 2,
+    "completionPercentage": 66.7,
+    "features": [
+      {
+        "name": "User Authentication",
+        "status": "completed",
+        "priority": "high",
+        "estimatedHours": 6,
+        "actualHours": 5.5,
+        "completedDate": "2026-01-09",
+        "complexity": "medium"
+      },
+      {
+        "name": "Task Creation & Management",
+        "status": "completed",
+        "priority": "high",
+        "estimatedHours": 8,
+        "actualHours": 9.0,
+        "completedDate": "2026-01-11",
+        "complexity": "high"
+      },
+      {
+        "name": "Real-time Updates",
+        "status": "completed",
+        "priority": "high",
+        "estimatedHours": 6,
+        "actualHours": 6.0,
+        "completedDate": "2026-01-11",
+        "complexity": "high"
+      },
+      {
+        "name": "Project Dashboard",
+        "status": "completed",
+        "priority": "medium",
+        "estimatedHours": 4,
+        "actualHours": 4.5,
+        "completedDate": "2026-01-12",
+        "complexity": "medium"
+      },
+      {
+        "name": "Team Collaboration",
+        "status": "completed",
+        "priority": "medium",
+        "estimatedHours": 5,
+        "actualHours": 4.0,
+        "completedDate": "2026-01-13",
+        "complexity": "medium"
+      },
+      {
+        "name": "File Attachments",
+        "status": "completed",
+        "priority": "low",
+        "estimatedHours": 3,
+        "actualHours": 3.5,
+        "completedDate": "2026-01-14",
+        "complexity": "low"
+      },
+      {
+        "name": "Notification System",
+        "status": "completed",
+        "priority": "medium",
+        "estimatedHours": 4,
+        "actualHours": 3.0,
+        "completedDate": "2026-01-14",
+        "complexity": "medium"
+      },
+      {
+        "name": "Mobile Responsive Design",
+        "status": "completed",
+        "priority": "medium",
+        "estimatedHours": 3,
+        "actualHours": 2.5,
+        "completedDate": "2026-01-14",
+        "complexity": "low"
+      },
+      {
+        "name": "Advanced Analytics",
+        "status": "in-progress",
+        "priority": "low",
+        "estimatedHours": 6,
+        "actualHours": 2.0,
+        "startedDate": "2026-01-15",
+        "complexity": "high"
+      },
+      {
+        "name": "API Documentation",
+        "status": "in-progress",
+        "priority": "medium",
+        "estimatedHours": 2,
+        "actualHours": 0.5,
+        "startedDate": "2026-01-15",
+        "complexity": "low"
+      },
+      {
+        "name": "Performance Optimization",
+        "status": "planned",
+        "priority": "medium",
+        "estimatedHours": 4,
+        "actualHours": 0,
+        "complexity": "medium"
+      },
+      {
+        "name": "Integration Testing",
+        "status": "planned",
+        "priority": "high",
+        "estimatedHours": 5,
+        "actualHours": 0,
+        "complexity": "medium"
+      }
+    ]
+  },
+  "kiroCliUsage": {
+    "totalKiroHours": 40.5,
+    "kiroUsagePercentage": 85.3,
+    "mostUsedCommands": [
+      {
+        "command": "@prime",
+        "usageCount": 15,
+        "totalTime": "2.5 hours"
+      },
+      {
+        "command": "@plan-feature",
+        "usageCount": 12,
+        "totalTime": "6.0 hours"
+      },
+      {
+        "command": "@execute",
+        "usageCount": 18,
+        "totalTime": "15.0 hours"
+      },
+      {
+        "command": "@code-review",
+        "usageCount": 8,
+        "totalTime": "4.0 hours"
+      },
+      {
+        "command": "@code-review-hackathon",
+        "usageCount": 3,
+        "totalTime": "1.5 hours"
+      }
+    ],
+    "customPromptsCreated": 6,
+    "steeringDocumentsUpdated": 8,
+    "workflowOptimizations": [
+      "Created custom prompt for API endpoint generation",
+      "Set up hooks for automatic DEVLOG updates",
+      "Configured MCP server for database management",
+      "Created specialized agent for frontend development"
+    ]
+  },
+  "codeMetrics": {
+    "totalLinesOfCode": 3247,
+    "frontendLOC": 1456,
+    "backendLOC": 1791,
+    "testCoverage": 73,
+    "filesCreated": 47,
+    "commitsCount": 34,
+    "branchesCreated": 8,
+    "issuesResolved": 12
+  },
+  "qualityMetrics": {
+    "bugsFound": 15,
+    "bugsFixed": 13,
+    "codeReviewSessions": 8,
+    "refactoringHours": 3.5,
+    "documentationPages": 6,
+    "testCasesWritten": 28
+  },
+  "milestones": [
+    {
+      "name": "Project Setup Complete",
+      "date": "2026-01-05",
+      "status": "completed",
+      "description": "Initial project structure, Kiro CLI configuration, and development environment setup"
+    },
+    {
+      "name": "MVP Backend Complete",
+      "date": "2026-01-08",
+      "status": "completed",
+      "description": "Core API endpoints, database schema, and authentication system"
+    },
+    {
+      "name": "Frontend MVP Complete",
+      "date": "2026-01-12",
+      "status": "completed",
+      "description": "Basic UI components, user workflows, and real-time features"
+    },
+    {
+      "name": "Feature Complete",
+      "date": "2026-01-18",
+      "status": "planned",
+      "description": "All planned features implemented and tested"
+    },
+    {
+      "name": "Documentation & Polish",
+      "date": "2026-01-21",
+      "status": "planned",
+      "description": "Complete documentation, demo video, and final testing"
+    },
+    {
+      "name": "Submission Ready",
+      "date": "2026-01-23",
+      "status": "planned",
+      "description": "Final submission with all requirements met"
+    }
+  ],
+  "riskAssessment": {
+    "currentRisks": [
+      {
+        "risk": "Advanced Analytics complexity",
+        "impact": "medium",
+        "probability": "high",
+        "mitigation": "Simplify scope or move to nice-to-have"
+      },
+      {
+        "risk": "Integration testing time",
+        "impact": "high",
+        "probability": "medium",
+        "mitigation": "Start testing earlier, focus on critical paths"
+      }
+    ],
+    "mitigatedRisks": [
+      {
+        "risk": "Real-time updates complexity",
+        "impact": "high",
+        "probability": "high",
+        "mitigation": "Used WebSocket library, completed successfully"
+      }
+    ]
+  },
+  "nextSteps": [
+    "Complete Advanced Analytics feature (3 hours remaining)",
+    "Finish API documentation (1.5 hours remaining)",
+    "Begin performance optimization (4 hours estimated)",
+    "Start comprehensive integration testing (5 hours estimated)",
+    "Create demo video (2 hours estimated)",
+    "Final documentation polish (2 hours estimated)"
+  ]
+}

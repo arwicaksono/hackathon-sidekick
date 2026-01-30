@@ -1,0 +1,224 @@
+{
+  "hackathon": {
+    "name": "Dynamous Kiro Hackathon",
+    "dates": "January 5-23, 2026",
+    "prizePool": "$17,000",
+    "totalPoints": 100
+  },
+  "categories": [
+    {
+      "name": "Application Quality",
+      "points": 40,
+      "description": "Overall quality and completeness of the application",
+      "subcategories": [
+        {
+          "name": "Functionality & Completeness",
+          "points": 15,
+          "description": "Does it work as intended?",
+          "criteria": [
+            "Core features are implemented and functional",
+            "Application runs without critical errors",
+            "User workflows complete successfully",
+            "Edge cases are handled appropriately",
+            "Performance is acceptable for intended use"
+          ]
+        },
+        {
+          "name": "Real-World Value",
+          "points": 15,
+          "description": "Does it solve a genuine problem?",
+          "criteria": [
+            "Addresses a clear, identifiable problem",
+            "Solution provides meaningful value to users",
+            "Market need is evident and well-articulated",
+            "Potential for real-world adoption",
+            "Impact on target audience is significant"
+          ]
+        },
+        {
+          "name": "Code Quality",
+          "points": 10,
+          "description": "Is the code well-structured and maintainable?",
+          "criteria": [
+            "Clean, readable code with consistent style",
+            "Proper error handling and validation",
+            "Appropriate use of design patterns",
+            "Code is well-organized and modular",
+            "Security best practices followed"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kiro CLI Usage",
+      "points": 20,
+      "description": "How effectively Kiro CLI was leveraged throughout development",
+      "subcategories": [
+        {
+          "name": "Effective Use of Features",
+          "points": 10,
+          "description": "How well did you leverage Kiro CLI?",
+          "criteria": [
+            "Extensive use of Kiro CLI throughout development",
+            "Proper utilization of steering documents",
+            "Effective context management strategies",
+            "Good use of built-in tools and capabilities",
+            "Integration with development workflow"
+          ]
+        },
+        {
+          "name": "Custom Commands Quality",
+          "points": 7,
+          "description": "Quality of your custom prompts",
+          "criteria": [
+            "Well-designed custom prompts for project needs",
+            "Clear, focused prompt objectives",
+            "Effective prompt parameters and structure",
+            "Reusable and maintainable prompt design",
+            "Innovation in prompt creation"
+          ]
+        },
+        {
+          "name": "Workflow Innovation",
+          "points": 3,
+          "description": "Creative use of Kiro CLI features",
+          "criteria": [
+            "Creative use of advanced features (MCP, agents, hooks)",
+            "Innovative workflow automation",
+            "Unique approaches to development challenges",
+            "Effective use of experimental features",
+            "Novel integration patterns"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Documentation",
+      "points": 20,
+      "description": "Quality and completeness of project documentation",
+      "subcategories": [
+        {
+          "name": "Completeness",
+          "points": 9,
+          "description": "All required documentation present",
+          "criteria": [
+            "README.md with clear project overview",
+            "Complete DEVLOG.md with development timeline",
+            "All steering documents properly filled out",
+            "Setup and installation instructions provided",
+            "Usage examples and troubleshooting included"
+          ]
+        },
+        {
+          "name": "Clarity",
+          "points": 7,
+          "description": "Easy to understand and follow",
+          "criteria": [
+            "Clear, well-structured writing",
+            "Appropriate use of formatting and organization",
+            "Technical concepts explained clearly",
+            "Good use of examples and illustrations",
+            "Professional presentation quality"
+          ]
+        },
+        {
+          "name": "Process Transparency",
+          "points": 4,
+          "description": "Clear development process documentation",
+          "criteria": [
+            "Development decisions and rationale documented",
+            "Challenges and solutions clearly described",
+            "Time tracking and milestone documentation",
+            "Kiro CLI usage patterns documented",
+            "Learning and insights shared"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Innovation",
+      "points": 15,
+      "description": "Originality and creative problem-solving",
+      "subcategories": [
+        {
+          "name": "Uniqueness",
+          "points": 8,
+          "description": "Original approach or solution",
+          "criteria": [
+            "Novel approach to problem-solving",
+            "Unique features or capabilities",
+            "Original use of technologies",
+            "Differentiation from existing solutions",
+            "Creative implementation strategies"
+          ]
+        },
+        {
+          "name": "Creative Problem-Solving",
+          "points": 7,
+          "description": "Novel technical solutions",
+          "criteria": [
+            "Innovative technical architecture",
+            "Creative use of available tools and frameworks",
+            "Elegant solutions to complex problems",
+            "Resourceful handling of constraints",
+            "Breakthrough thinking in implementation"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Presentation",
+      "points": 5,
+      "description": "Quality of project presentation and demonstration",
+      "subcategories": [
+        {
+          "name": "Demo Video",
+          "points": 3,
+          "description": "Clear demonstration of your project",
+          "criteria": [
+            "Clear, well-structured demonstration",
+            "Shows key features and functionality",
+            "Good audio and video quality",
+            "Appropriate length and pacing",
+            "Engaging and professional presentation"
+          ]
+        },
+        {
+          "name": "README",
+          "points": 2,
+          "description": "Professional project overview",
+          "criteria": [
+            "Professional and polished presentation",
+            "Clear value proposition and benefits",
+            "Easy to understand project overview",
+            "Good visual organization and formatting",
+            "Compelling project description"
+          ]
+        }
+      ]
+    }
+  ],
+  "evaluationGuidelines": {
+    "scoringScale": {
+      "excellent": "90-100%",
+      "good": "70-89%",
+      "satisfactory": "50-69%",
+      "needsImprovement": "30-49%",
+      "inadequate": "0-29%"
+    },
+    "requiredSubmissionFiles": [
+      "README.md",
+      "DEVLOG.md",
+      ".kiro/ directory with steering documents and custom prompts",
+      "Demo video (recommended 3-5 minutes)",
+      "Working application code"
+    ],
+    "evaluationProcess": [
+      "Initial review of documentation and setup",
+      "Code quality and architecture assessment",
+      "Kiro CLI integration evaluation",
+      "Demo video review and functionality testing",
+      "Innovation and uniqueness assessment"
+    ]
+  }
+}

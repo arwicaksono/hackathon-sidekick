@@ -1,0 +1,9 @@
+{
+  "servers": {},
+  "excludePatterns": [
+    "**/*.md",
+    ".kiro/prompts/**",
+    ".kiro/steering/**",
+    ".kiro/documentation/**"
+  ]
+}

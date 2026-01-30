@@ -1,0 +1,313 @@
+# Project Structure Templates
+
+## Web Application (Full Stack)
+
+```
+project-name/
+├── frontend/                   # React/Vue/Angular frontend
+│   ├── src/
+│   │   ├── components/        # Reusable UI components
+│   │   ├── pages/            # Page components
+│   │   ├── hooks/            # Custom React hooks
+│   │   ├── services/         # API calls and external services
+│   │   ├── utils/            # Helper functions
+│   │   ├── styles/           # CSS/SCSS files
+│   │   └── assets/           # Images, fonts, etc.
+│   ├── public/               # Static files
+│   ├── package.json
+│   └── README.md
+├── backend/                   # Node.js/Python/Go backend
+│   ├── src/
+│   │   ├── controllers/      # Route handlers
+│   │   ├── models/           # Database models
+│   │   ├── middleware/       # Express middleware
+│   │   ├── routes/           # API routes
+│   │   ├── services/         # Business logic
+│   │   ├── utils/            # Helper functions
+│   │   └── config/           # Configuration files
+│   ├── tests/                # Backend tests
+│   ├── package.json
+│   └── README.md
+├── database/                  # Database files
+│   ├── migrations/           # Database migrations
+│   ├── seeds/                # Sample data
+│   └── schema.sql            # Database schema
+├── docs/                     # Project documentation
+├── .kiro/                    # Kiro CLI configuration
+│   ├── steering/
+│   ├── prompts/
+│   └── agents/
+├── docker-compose.yml        # Local development setup
+├── README.md
+├── DEVLOG.md
+└── .gitignore
+```
+
+## Mobile Application (React Native/Flutter)
+
+```
+mobile-app/
+├── src/
+│   ├── components/           # Reusable components
+│   │   ├── common/          # Common UI components
+│   │   └── forms/           # Form components
+│   ├── screens/             # App screens
+│   │   ├── auth/           # Authentication screens
+│   │   ├── home/           # Home/dashboard screens
+│   │   └── profile/        # User profile screens
+│   ├── navigation/          # Navigation configuration
+│   ├── services/            # API and external services
+│   │   ├── api/            # API calls
+│   │   ├── storage/        # Local storage
+│   │   └── notifications/  # Push notifications
+│   ├── hooks/               # Custom hooks
+│   ├── utils/               # Helper functions
+│   ├── styles/              # Styling
+│   └── assets/              # Images, fonts, icons
+├── tests/                   # Test files
+│   ├── components/
+│   ├── screens/
+│   └── services/
+├── android/                 # Android-specific files
+├── ios/                     # iOS-specific files
+├── .kiro/                   # Kiro CLI configuration
+├── package.json
+├── README.md
+├── DEVLOG.md
+└── app.json
+```
+
+## AI/ML Project
+
+```
+ai-ml-project/
+├── data/                    # Dataset storage
+│   ├── raw/                # Original, unprocessed data
+│   ├── processed/          # Cleaned and preprocessed data
+│   ├── external/           # External datasets
+│   └── interim/            # Intermediate processing steps
+├── notebooks/               # Jupyter notebooks
+│   ├── exploratory/        # Data exploration
+│   ├── modeling/           # Model development
+│   └── evaluation/         # Model evaluation
+├── src/                     # Source code
+│   ├── data/               # Data processing scripts
+│   │   ├── make_dataset.py
+│   │   └── preprocess.py
+│   ├── features/           # Feature engineering
+│   │   ├── build_features.py
+│   │   └── feature_selection.py
+│   ├── models/             # Model definitions
+│   │   ├── train_model.py
+│   │   ├── predict_model.py
+│   │   └── evaluate_model.py
+│   ├── visualization/      # Plotting and visualization
+│   │   └── visualize.py
+│   └── utils/              # Utility functions
+├── models/                  # Trained model files
+├── reports/                 # Analysis reports
+│   ├── figures/            # Generated graphics
+│   └── performance/        # Model performance reports
+├── api/                     # Model serving API
+│   ├── app.py              # Flask/FastAPI application
+│   ├── models.py           # Model loading and inference
+│   └── utils.py            # API utilities
+├── tests/                   # Test files
+├── requirements.txt         # Python dependencies
+├── .kiro/                   # Kiro CLI configuration
+├── README.md
+├── DEVLOG.md
+└── environment.yml          # Conda environment
+```
+
+## Blockchain/Web3 Project
+
+```
+blockchain-project/
+├── contracts/               # Smart contracts
+│   ├── src/                # Contract source files
+│   ├── test/               # Contract tests
+│   ├── scripts/            # Deployment scripts
+│   └── artifacts/          # Compiled contracts
+├── frontend/                # DApp frontend
+│   ├── src/
+│   │   ├── components/     # React components
+│   │   ├── hooks/          # Web3 hooks
+│   │   ├── services/       # Blockchain services
+│   │   ├── utils/          # Web3 utilities
+│   │   └── contracts/      # Contract ABIs
+│   ├── public/
+│   └── package.json
+├── backend/                 # Optional backend API
+│   ├── src/
+│   │   ├── services/       # Blockchain indexing
+│   │   ├── routes/         # API routes
+│   │   └── utils/          # Helper functions
+│   └── package.json
+├── scripts/                 # Utility scripts
+│   ├── deploy.js           # Contract deployment
+│   ├── verify.js           # Contract verification
+│   └── interact.js         # Contract interaction
+├── tests/                   # Integration tests
+├── .kiro/                   # Kiro CLI configuration
+├── hardhat.config.js        # Hardhat configuration
+├── package.json
+├── README.md
+├── DEVLOG.md
+└── .env.example
+```
+
+## API/Microservice
+
+```
+api-service/
+├── src/
+│   ├── controllers/         # Request handlers
+│   │   ├── auth.controller.js
+│   │   ├── user.controller.js
+│   │   └── data.controller.js
+│   ├── models/              # Data models
+│   │   ├── user.model.js
+│   │   └── data.model.js
+│   ├── routes/              # API routes
+│   │   ├── auth.routes.js
+│   │   ├── user.routes.js
+│   │   └── data.routes.js
+│   ├── middleware/          # Custom middleware
+│   │   ├── auth.middleware.js
+│   │   ├── validation.middleware.js
+│   │   └── error.middleware.js
+│   ├── services/            # Business logic
+│   │   ├── auth.service.js
+│   │   ├── user.service.js
+│   │   └── email.service.js
+│   ├── utils/               # Helper functions
+│   │   ├── database.js
+│   │   ├── logger.js
+│   │   └── validators.js
+│   ├── config/              # Configuration
+│   │   ├── database.js
+│   │   ├── auth.js
+│   │   └── app.js
+│   └── app.js               # Main application file
+├── tests/                   # Test files
+│   ├── unit/               # Unit tests
+│   ├── integration/        # Integration tests
+│   └── fixtures/           # Test data
+├── docs/                    # API documentation
+│   ├── api.md              # API endpoints
+│   └── deployment.md       # Deployment guide
+├── scripts/                 # Utility scripts
+│   ├── seed.js             # Database seeding
+│   └── migrate.js          # Database migrations
+├── .kiro/                   # Kiro CLI configuration
+├── package.json
+├── README.md
+├── DEVLOG.md
+├── Dockerfile
+└── docker-compose.yml
+```
+
+## Desktop Application (Electron/Tauri)
+
+```
+desktop-app/
+├── src/
+│   ├── main/                # Main process (Electron)
+│   │   ├── main.js         # Main entry point
+│   │   ├── menu.js         # Application menu
+│   │   └── windows/        # Window management
+│   ├── renderer/            # Renderer process (UI)
+│   │   ├── components/     # UI components
+│   │   ├── pages/          # Application pages
+│   │   ├── services/       # Frontend services
+│   │   ├── styles/         # CSS/styling
+│   │   └── utils/          # Utility functions
+│   ├── shared/              # Shared utilities
+│   │   ├── constants.js
+│   │   ├── ipc.js          # IPC communication
+│   │   └── utils.js
+│   └── assets/              # Static assets
+├── build/                   # Build configuration
+│   ├── icons/              # Application icons
+│   └── installers/         # Installer configurations
+├── tests/                   # Test files
+├── .kiro/                   # Kiro CLI configuration
+├── package.json
+├── electron-builder.json   # Build configuration
+├── README.md
+├── DEVLOG.md
+└── .gitignore
+```
+
+## CLI Tool
+
+```
+cli-tool/
+├── src/
+│   ├── commands/            # CLI commands
+│   │   ├── init.js
+│   │   ├── build.js
+│   │   └── deploy.js
+│   ├── lib/                 # Core functionality
+│   │   ├── config.js
+│   │   ├── utils.js
+│   │   └── api.js
+│   ├── templates/           # File templates
+│   └── index.js             # Main entry point
+├── bin/                     # Executable files
+│   └── cli-tool
+├── tests/                   # Test files
+├── docs/                    # Documentation
+│   ├── commands.md
+│   └── examples.md
+├── .kiro/                   # Kiro CLI configuration
+├── package.json
+├── README.md
+├── DEVLOG.md
+└── LICENSE
+```
+
+## Common Files for All Projects
+
+```
+# Always include these files:
+├── .kiro/                   # Kiro CLI configuration
+│   ├── steering/           # Project context
+│   │   ├── product.md
+│   │   ├── tech.md
+│   │   └── structure.md
+│   ├── prompts/            # Custom prompts
+│   └── agents/             # Custom agents (optional)
+├── README.md               # Project overview
+├── DEVLOG.md              # Development log
+├── .gitignore             # Git ignore rules
+├── LICENSE                # Project license
+└── .env.example           # Environment variables template
+```
+
+## Kiro CLI Specific Structure
+
+```
+# Enhance any project with Kiro CLI features:
+.kiro/
+├── steering/               # Project knowledge
+│   ├── product.md         # Product requirements
+│   ├── tech.md            # Technical architecture
+│   ├── structure.md       # Project organization
+│   ├── api-standards.md   # API conventions (if applicable)
+│   └── testing-guide.md   # Testing approach (if applicable)
+├── prompts/                # Custom workflow prompts
+│   ├── setup.md           # Project setup
+│   ├── feature-plan.md    # Feature planning
+│   ├── code-review.md     # Code review
+│   └── deploy.md          # Deployment (if applicable)
+├── agents/                 # Specialized agents (optional)
+│   ├── backend-expert.json
+│   ├── frontend-expert.json
+│   └── devops-specialist.json
+└── settings/               # Kiro CLI settings
+    ├── mcp.json           # MCP server configuration
+    ├── lsp.json           # Language server setup
+    └── hooks.json         # Workflow automation
+```

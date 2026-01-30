@@ -1,184 +1,365 @@
-# Dynamous Kiro Hackathon Quickstart Template
+# Hackathon Sidekick
 
-🚀 **Your starting point for the Dynamous and Kiro Hackathon** - A comprehensive template with pre-configured Kiro CLI setup, development workflows, and submission guidelines.
+🚀 **AI-powered assistant that democratizes hackathon success** - Helping anyone analyze ideas, track progress against judging rubrics, and automate documentation to maximize their chances of winning.
 
-> **📖 New to Kiro?** Check out [kiro-guide.md](kiro-guide.md) to quickly get accustomed to how Kiro works and understand its unique features for the hackathon.
+[![Kiro CLI](https://img.shields.io/badge/Powered%20by-Kiro%20CLI-blue)](https://kiro.dev)
+[![Hackathon](https://img.shields.io/badge/Dynamous%20Kiro-Hackathon-green)](https://dynamous.ai/kiro-hackathon)
+[![Prize Pool](https://img.shields.io/badge/Prize%20Pool-$17,000-gold)](https://dynamous.ai/kiro-hackathon)
 
-## About the Hackathon
+## 🎯 What is Hackathon Sidekick?
 
-The **Kiro Hackathon** is a coding competition where developers build real-world applications using the Kiro CLI. Show off your AI-powered development skills and compete for **$17,000 in prizes**.
+Hackathon Sidekick bridges the gap between great ideas and winning submissions by providing structured, AI-powered guidance throughout the entire hackathon process. Whether you're a seasoned developer or a non-technical founder with a brilliant idea, Sidekick helps you maximize your chances of success.
 
-- **📅 Dates**: January 5-23, 2026
-- **💰 Prize Pool**: $17,000 across 10 winners
-- **🎯 Theme**: Open - build anything that solves a real problem
-- **🔗 More Info**: [dynamous.ai/kiro-hackathon](https://dynamous.ai/kiro-hackathon)
+### The Problem
+- **Non-technical participants** have great ideas but lack systematic development processes
+- **Experienced developers** often neglect documentation and judging criteria alignment
+- **Everyone struggles** with time management and feature prioritization during hackathons
+- **Most submissions** fail to effectively communicate their value and technical excellence
 
-## What's Included
+### Our Solution
+An intelligent assistant that provides:
+- **Idea evaluation** against typical judging criteria
+- **Structured development workflows** with AI-powered guidance
+- **Automated documentation** generation and maintenance
+- **Progress tracking** aligned with hackathon scoring rubrics
+- **Time management** and feature prioritization assistance
 
-This template provides everything you need to get started:
+## ✨ Key Features
 
-- **📋 Steering Documents**: Pre-configured project templates (product.md, tech.md, structure.md)
-- **⚡ Custom Prompts**: 11 powerful development workflow prompts
-- **📖 Examples**: Sample README and DEVLOG showing best practices
-- **🏆 Hackathon Tools**: Specialized code review prompt for submission evaluation
+### 🎯 **Hackathon Sidekick Assistant**
+- **@sidekick** - Main menu interface for all hackathon workflows
+- **@evaluate-idea** - Analyze project ideas against judging criteria with score predictions
+- **@init-project** - Set up optimal Kiro configuration for hackathon development
+- **@submission-check** - Final validation and submission readiness checklist
 
-## Quick Start
+### 📊 **Hackathon Score Optimization**
+- **Real-time evaluation** against official judging criteria (100-point rubric)
+- **Score tracking** with `@update-progress` and `@progress-report`
+- **Improvement recommendations** with specific point values and effort estimates
+- **Submission readiness** validation with comprehensive checklists
 
-### 1. Clone This Template
+### 📋 **Documentation Automation**
+- **@update-devlog** - Automatically maintain development logs
+- **@update-readme** - Keep project documentation current
+- **Professional templates** for hackathon submissions
+- **Progress tracking** with time management and milestone monitoring
+
+### 🎯 **Project Management & Workflow**
+- **Idea evaluation** with feasibility and winning probability assessment
+- **Project initialization** with optimal Kiro CLI configuration
+- **Feature building** with custom agents and systematic development
+- **Quality assurance** with hackathon-specific code reviews
+
+## 🚀 Quick Start
+
+### Prerequisites
+- **Kiro CLI** installed and authenticated ([Installation Guide](https://kiro.dev/docs/cli/installation))
+- **Git** for version control
+- **Development environment** for your chosen technology stack
+
+### 1. Get Hackathon Sidekick
 ```bash
-git clone https://github.com/coleam00/dynamous-kiro-hackathon
-cd dynamous-kiro-hackathon
+git clone https://github.com/yourusername/hackathon-sidekick
+cd hackathon-sidekick
 ```
 
-### 2. Run the Setup Wizard
+### 2. Initialize Your Project
 ```bash
+# Start Kiro CLI in your project directory
+kiro-cli
+
+# Run the interactive setup wizard
 @quickstart
 ```
 
-This assumes you already have Kiro CLI installed and that you started with the `kiro-cli` command in your terminal.
+The setup wizard will:
+- ✅ Configure your steering documents with project details
+- ✅ Explain all available commands and workflows
+- ✅ Set up your development environment
+- ✅ Create your initial project structure
 
-This interactive wizard will:
-- ✅ Fill out your steering documents with project details
-- ✅ Configure your development workflow
-- ✅ Set up Kiro CLI for your specific project
-- ✅ Explain all available prompts and features
+### 3. Start Your Hackathon Workflow
+```bash
+# Access the main menu
+@sidekick
 
-### 3. Start Building
-Your project is now configured! Use these core prompts:
-- **`@prime`** - Load project context
-- **`@plan-feature`** - Plan new features
-- **`@execute`** - Implement plans systematically
-- **`@code-review`** - Review code quality
+# Evaluate your project idea
+@evaluate-idea
 
-**Note:** Your typical workflow will be `@prime` → `@plan-feature` → `@execute` → `@code-review`, but feel free to change it however you want. These commands may require additional details (like what feature to plan or which plan file to execute), but Kiro will ask for these parameters after you invoke the command.
+# Initialize your project
+@init-project
 
-## Development Workflow (Customize this However You Want!)
+# Track your progress
+@update-progress
+@progress-report
+```
 
-### Initial Setup (One-Time)
-1. **Complete setup**: Run `@quickstart` to configure your project
+## 🛠️ Installation & Setup
 
-### Core Development Cycle (Every Feature/Session)
+### Step 1: Install Kiro CLI
 
-### Phase 1: Setup & Planning
-1. **Load context**: Use `@prime` to understand your codebase
-2. **Plan features**: Use `@plan-feature` for comprehensive planning
+**macOS:**
+```bash
+curl -fsSL https://cli.kiro.dev/install | bash
+```
 
-### Phase 2: Build & Iterate
-1. **Implement**: Use `@execute` to build features systematically
-2. **Review**: Use `@code-review` to maintain code quality
-3. **Document**: Update your DEVLOG.md as you work
-4. **Optimize**: Customize your `.kiro/` configuration for your workflow
+**Linux (Ubuntu):**
+```bash
+wget https://desktop-release.q.us-east-1.amazonaws.com/latest/kiro-cli.deb
+sudo dpkg -i kiro-cli.deb
+sudo apt-get install -f
+```
 
-### Phase 3: Submission Preparation
-1. **Final review**: Run `@code-review-hackathon` for submission evaluation
-2. **Polish documentation**: Ensure README.md and DEVLOG.md are complete
-3. **Verify requirements**: Check all submission criteria are met
+**Windows (WSL):**
+```bash
+# Install WSL first, then use Linux instructions
+wsl --install
+```
 
-## Submission Requirements
+### Step 2: Authenticate
+```bash
+kiro-cli login
+# Choose AWS Builder ID (individuals) or IAM Identity Center (enterprise)
+```
 
-Your submission will be judged on these criteria (100 points total):
+### Step 3: Clone Hackathon Sidekick
+```bash
+git clone https://github.com/yourusername/hackathon-sidekick
+cd hackathon-sidekick
+```
 
-### Application Quality (40 points)
-- **Functionality & Completeness** (15 pts): Does it work as intended?
-- **Real-World Value** (15 pts): Does it solve a genuine problem?
-- **Code Quality** (10 pts): Is the code well-structured and maintainable?
+### Step 4: Run Setup Wizard
+```bash
+kiro-cli
+@quickstart
+```
 
-### Kiro CLI Usage (20 points)
-- **Effective Use of Features** (10 pts): How well did you leverage Kiro CLI?
-- **Custom Commands Quality** (7 pts): Quality of your custom prompts
-- **Workflow Innovation** (3 pts): Creative use of Kiro CLI features
+## 📚 Command Reference
 
-### Documentation (20 points)
-- **Completeness** (9 pts): All required documentation present
-- **Clarity** (7 pts): Easy to understand and follow
-- **Process Transparency** (4 pts): Clear development process documentation
+### 🎯 **Main Interface**
 
-### Innovation (15 points)
-- **Uniqueness** (8 pts): Original approach or solution
-- **Creative Problem-Solving** (7 pts): Novel technical solutions
+| Command | Purpose | When to Use |
+|---------|---------|-------------|
+| `@sidekick` | Main menu interface | Access all hackathon workflows |
 
-### Presentation (5 points)
-- **Demo Video** (3 pts): Clear demonstration of your project
-- **README** (2 pts): Professional project overview
+### 🚀 **Project Setup & Evaluation**
 
-## Required Documentation
+| Command | Purpose | When to Use |
+|---------|---------|-------------|
+| `@evaluate-idea` | Analyze project ideas | Before starting development |
+| `@init-project` | Set up Kiro configuration | After idea evaluation |
+| `@quickstart` | Interactive setup wizard | Initial configuration |
 
-Ensure these files are complete and high-quality:
+### 📊 **Progress & Documentation**
 
-### README.md
-- Clear project description and value proposition
-- Prerequisites and setup instructions
-- Architecture overview and key components
-- Usage examples and troubleshooting
+| Command | Purpose | When to Use |
+|---------|---------|-------------|
+| `@update-progress` | Track development progress | After completing work |
+| `@progress-report` | Generate progress summary | Check current score |
+| `@update-devlog` | Maintain development log | Document daily work |
+| `@update-readme` | Keep README current | Update project documentation |
 
-*There's a lot of freedom for how you can structure this. Just make sure that it's easy for someone viewing this to know exactly what your project is about and how to run it themselves. This is the main criteria that explains the project clearly and how to test it in a local environment.*
+### 🔍 **Quality & Submission**
 
-### DEVLOG.md
-- Development timeline with key milestones
-- Technical decisions and rationale
-- Challenges faced and solutions implemented
-- Time tracking and Kiro CLI usage statistics
+| Command | Purpose | When to Use |
+|---------|---------|-------------|
+| `@submission-check` | Validate submission | Before final submission |
+| `@code-review-hackathon` | Hackathon evaluation | Periodic score checks |
 
-*There's a lot of freedom in how you structure this too. It's up to you how you want to document your timeline, milestones, decisions made, challenges you encounter, and all those kinds of things. Feel free to use Kiro to help you maintain your devlog as you're working on the project. Hint: create a Kiro prompt to help you update your log based on what's happening.*
+### 🔄 **Recommended Workflows**
 
-### .kiro/ Directory
-- **Steering documents**: Customized for your project
-- **Custom prompts**: Workflow-specific commands
-- **Configuration**: Optimized for your development process
+#### **Initial Setup**
+```bash
+@sidekick → @evaluate-idea → @init-project → @quickstart
+```
 
-*This template provides a good starting point with prompts, and the wizard helps you set up your initial steering documents. However, it's encouraged for you to continue to customize things and refine it as you're working on your project.*
+#### **Development Cycle**
+```bash
+@update-progress → @update-devlog → @progress-report
+```
 
-## Available Prompts
+#### **Submission Preparation**
+```bash
+@update-readme → @submission-check → @code-review-hackathon
+```
 
-This template includes 11 powerful development prompts:
+## 🏗️ Architecture
 
-### Core Development
-- **`@prime`** - Load comprehensive project context
-- **`@plan-feature`** - Create detailed implementation plans
-- **`@execute`** - Execute plans with systematic task management
-- **`@quickstart`** - Interactive project setup wizard
+### System Overview
+```
+Hackathon Sidekick
+├── Kiro CLI Framework          # AI-powered development assistant
+├── Custom Prompts (12)         # Specialized hackathon workflows
+├── Steering Documents          # Project context and guidelines
+├── Templates & Examples        # Professional project templates
+├── Judging Rubric             # 100-point evaluation framework
+└── Automation Hooks           # Workflow optimization
+```
 
-### Quality Assurance
-- **`@code-review`** - Technical code review for quality and bugs
-- **`@code-review-hackathon`** - Hackathon submission evaluation
-- **`@code-review-fix`** - Fix issues found in code reviews
-- **`@system-review`** - Analyze implementation vs plan
+### Core Components
 
-### Documentation & Planning
-- **`@create-prd`** - Generate Product Requirements Documents
-- **`@execution-report`** - Generate implementation reports
-- **`@rca`** - Root cause analysis for issues
-- **`@implement-fix`** - Implement fixes based on analysis
+#### **🧠 AI-Powered Prompts**
+- **Location**: `.kiro/prompts/`
+- **Purpose**: Specialized commands for hackathon development
+- **Technology**: Markdown-based prompts with Kiro CLI integration
+- **Customization**: Fully customizable for your workflow
 
-## Examples
+#### **📋 Steering Documents**
+- **Location**: `.kiro/steering/`
+- **Purpose**: Persistent project knowledge and context
+- **Files**: `product.md`, `tech.md`, `structure.md`
+- **Benefit**: Consistent AI assistance across all sessions
 
-Check the `examples/` folder for:
-- **README.md**: Professional project documentation example
-- **DEVLOG.md**: Comprehensive development log example
+#### **📊 Judging Framework**
+- **Location**: `rubrics/dynamous-kiro.json`
+- **Purpose**: 100-point evaluation system
+- **Categories**: Application Quality (40), Kiro CLI Usage (20), Documentation (20), Innovation (15), Presentation (5)
+- **Usage**: Integrated into `@code-review-hackathon` command
 
-These examples show the level of detail and professionalism expected for hackathon submissions.
+#### **🎯 Project Templates**
+- **Location**: `templates/`
+- **Purpose**: Professional project structure and documentation
+- **Types**: README, DEVLOG, project structures for different tech stacks
+- **Quality**: Designed for winning hackathon submissions
 
-## Tips for Success
+### Data Flow
+```
+User Input → Kiro CLI → Custom Prompts → AI Processing → 
+Structured Output → Documentation Updates → Progress Tracking
+```
 
-### Maximize Your Score
-1. **Use Kiro CLI extensively** - It's 20% of your score
-2. **Document everything** - Process documentation is 20% of your score
-3. **Build something useful** - Real-world value is heavily weighted
-4. **Optimize your workflow** - Custom prompts and steering documents matter
+### Technology Stack
+- **Primary**: Kiro CLI (AI-powered development assistant)
+- **AI Models**: Claude Haiku 4.5, Sonnet 4.0/4.5, Opus 4.5
+- **Data Storage**: JSON files for configuration and state
+- **Documentation**: Markdown for templates and outputs
+- **Automation**: Hooks for workflow optimization
+- **Version Control**: Git for project tracking
+
+## 📖 Examples
+
+### Sample Projects
+Check the `examples/` directory for:
+
+#### **`sample-evaluation.json`**
+Complete hackathon evaluation showing:
+- **87/100 score** with detailed breakdown
+- **Category-by-category feedback** with specific improvements
+- **Competitive positioning** and score optimization strategies
+
+#### **`sample-progress.json`**
+Comprehensive progress tracking including:
+- **47.5 hours** of development over 10 days
+- **85% Kiro CLI usage** with command statistics
+- **8/12 features completed** with time tracking
+- **Risk assessment** and milestone management
+
+#### **`sample-devlog-entry.md`**
+Professional daily development log featuring:
+- **6-hour development session** with WebSocket implementation
+- **Technical decisions** with rationale and alternatives
+- **Kiro CLI workflow** showing specific command usage
+- **Challenge resolution** with time tracking and lessons learned
+
+### Project Templates
+- **Web Applications**: Full-stack with React/Node.js structure
+- **Mobile Apps**: React Native/Flutter organization
+- **AI/ML Projects**: Data pipeline and model development structure
+- **Blockchain/Web3**: Smart contracts and DApp architecture
+- **APIs/Microservices**: RESTful service organization
+- **Desktop Apps**: Electron/Tauri application structure
+- **CLI Tools**: Command-line utility organization
+
+## 🏆 Hackathon Success Tips
+
+### Maximize Your Score (100 Points Total)
+
+#### **Application Quality (40 points)**
+- ✅ Build functional, complete features that solve real problems
+- ✅ Focus on code quality with proper error handling and testing
+- ✅ Ensure your solution provides genuine value to users
+
+#### **Kiro CLI Usage (20 points)**
+- ✅ Use Kiro CLI extensively throughout development (aim for 80%+ usage)
+- ✅ Create custom prompts that demonstrate workflow innovation
+- ✅ Customize steering documents and show advanced feature usage
+
+#### **Documentation (20 points)**
+- ✅ Maintain comprehensive DEVLOG.md throughout development
+- ✅ Create professional README.md with clear setup instructions
+- ✅ Document your development process and technical decisions
+
+#### **Innovation (15 points)**
+- ✅ Build unique features that differentiate your solution
+- ✅ Use creative problem-solving approaches and novel technologies
+- ✅ Show breakthrough thinking in your implementation
+
+#### **Presentation (5 points)**
+- ✅ Create compelling demo video (3-5 minutes recommended)
+- ✅ Polish your README.md for professional presentation
 
 ### Development Best Practices
-- **Start with `@quickstart`** to set up your foundation properly
-- **Use `@prime`** at the start of every new conversation to quickly catch the coding assistant up to speed on what has been built in the project already
-- **Update your DEVLOG.md** continuously, not just at the end
-- **Customize your `.kiro/` configuration** as you learn your workflow
-- **Run `@code-review-hackathon`** periodically to compare your project against the judging rubric and before submitting
+1. **Start with `@quickstart`** to establish solid foundation
+2. **Use `@prime` at every session start** for context loading
+3. **Update DEVLOG.md continuously** using `@execution-report`
+4. **Run `@code-review-hackathon` regularly** to track your score
+5. **Customize your `.kiro/` directory** to show workflow innovation
 
-## Getting Help
+## 🤝 Contributing
 
+We welcome contributions to make Hackathon Sidekick even better!
+
+### Areas for Contribution
+- **New project templates** for emerging technologies
+- **Additional custom prompts** for specialized workflows
+- **Enhanced judging rubrics** for different hackathon types
+- **Integration examples** with popular development tools
+- **Documentation improvements** and tutorials
+
+### How to Contribute
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-improvement`)
+3. Make your changes and test thoroughly
+4. Update documentation as needed
+5. Commit changes (`git commit -m 'Add amazing improvement'`)
+6. Push to branch (`git push origin feature/amazing-improvement`)
+7. Open a Pull Request
+
+## 📞 Support & Community
+
+### Getting Help
+- **Documentation**: Complete guides in `docs/` directory
+- **Examples**: Real-world samples in `examples/` directory
+- **Command Reference**: Quick lookup in `SIDEKICK-COMMANDS.md`
+- **Kiro CLI Help**: Use `/help` within Kiro CLI sessions
+
+### Community Resources
+- **Dynamous Community**: Join for hackathon support and networking
 - **Kiro CLI Documentation**: [kiro.dev/docs/cli](https://kiro.dev/docs/cli)
-- **Hackathon Community**: Join the Dynamous community for support
-- **Built-in Help**: Use `/help` in Kiro CLI for command assistance
+- **GitHub Issues**: Report bugs and request features
+- **Hackathon Discord**: Real-time support during competition
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Kiro CLI Team** - For creating the amazing AI-powered development platform
+- **Dynamous** - For organizing the hackathon and providing the opportunity
+- **Hackathon Community** - For feedback and contributions to make this tool better
+- **Open Source Libraries** - All the amazing tools that make this possible
 
 ---
 
-**Ready to build something amazing?** Run `@quickstart` and let's get started! 🚀
+## 🎯 Ready to Win Your Hackathon?
+
+**Get started in 3 simple steps:**
+
+1. **Install Kiro CLI** and clone this repository
+2. **Run `@quickstart`** to configure your project
+3. **Start building** with `@prime` → `@plan-feature` → `@execute`
+
+**Built with ❤️ using [Kiro CLI](https://kiro.dev) for the Dynamous Kiro Hackathon**
+
+*Transform your hackathon ideas into winning submissions with AI-powered development assistance!* 🚀

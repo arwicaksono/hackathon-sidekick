@@ -1,0 +1,40 @@
+{
+  "hooks": {
+    "postToolUse": [
+      {
+        "matcher": "write",
+        "command": "echo '📝 File updated: $TOOL_OUTPUT' && echo '💡 Consider updating your DEVLOG.md with this progress'",
+        "description": "Remind to update DEVLOG after significant file writes"
+      },
+      {
+        "matcher": "execute",
+        "command": "echo '⚡ Command executed successfully' && echo '📊 Track this progress in your development timeline'",
+        "description": "Progress tracking reminder after command execution"
+      }
+    ],
+    "userPromptSubmit": [
+      {
+        "matcher": "completed|finished|done|implemented|built|created",
+        "command": "echo '🎉 Great progress! Remember to:' && echo '  • Update DEVLOG.md with what you completed' && echo '  • Document any challenges or decisions made' && echo '  • Consider running @execution-report for formal documentation'",
+        "description": "DEVLOG update reminder when user mentions completing work"
+      },
+      {
+        "matcher": "bug|error|issue|problem|failed",
+        "command": "echo '🔍 Issue detected! Consider:' && echo '  • Running @rca for root cause analysis' && echo '  • Documenting the problem in DEVLOG.md' && echo '  • Tracking time spent on debugging'",
+        "description": "Issue tracking reminder when problems are mentioned"
+      }
+    ],
+    "agentSpawn": [
+      {
+        "command": "echo '🚀 Hackathon Sidekick Ready!' && echo '📋 Quick reminders:' && echo '  • Use @prime to load project context' && echo '  • Update DEVLOG.md regularly for hackathon scoring' && echo '  • Run @code-review-hackathon periodically to check your score'",
+        "description": "Hackathon-specific reminders when agent starts"
+      }
+    ],
+    "stop": [
+      {
+        "command": "echo '📝 Session complete! Don\\'t forget to:' && echo '  • Update your DEVLOG.md with today\\'s progress' && echo '  • Commit your changes to git' && echo '  • Plan your next development session'",
+        "description": "Documentation reminder at session end"
+      }
+    ]
+  }
+}
