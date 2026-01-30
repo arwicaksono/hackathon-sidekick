@@ -177,7 +177,7 @@ kiro-cli
 - Technical decisions: "Chose Chart.js for data visualization"
 - Challenges: "API rate limiting resolved with caching"
 - Time tracking: "3 hours on backend, 2 hours on frontend"
-- Kiro CLI usage: "Used @plan-feature and @execute workflows"
+- Kiro CLI usage: "Used @update-progress and @update-devlog workflows"
 
 ```bash
 # Keep README.md current and professional

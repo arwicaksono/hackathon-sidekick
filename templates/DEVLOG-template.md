@@ -34,12 +34,12 @@
 **Focus**: Project initialization and planning
 
 **Accomplishments**:
-- ✅ Completed project setup with `@quickstart`
-- ✅ Defined project scope and requirements
-- ✅ Set up development environment
+- ✅ Completed project setup with `@sidekick`
+- ✅ Defined project scope and requirements with `@evaluate-idea`
+- ✅ Set up development environment with `@init-project`
 
 **Kiro CLI Usage**:
-- Used `@prime` to understand project structure
+- Used `@sidekick` to access main menu and understand project workflows
 - Created custom prompts for [specific workflow]
 - Configured steering documents
 
@@ -225,7 +225,7 @@
 - [ ] **.kiro/ Directory** - Custom prompts and steering docs
 
 ### Quality Checks
-- [ ] **Code Review** - Ran `@code-review-hackathon`
+- [ ] **Code Review** - Ran `@submission-check` and `@code-review-hackathon`
 - [ ] **Testing** - All tests passing
 - [ ] **Documentation** - All sections complete
 - [ ] **Demo** - Video demonstrates all key features

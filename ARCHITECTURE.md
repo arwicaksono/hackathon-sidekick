@@ -121,7 +121,7 @@ User Input → @sidekick → @evaluate-idea → @init-project → Project Setup
 2. `@evaluate-idea` analyzes project concept against judging criteria
 3. Score prediction and feasibility assessment provided
 4. `@init-project` configures optimal Kiro CLI setup
-6. Development environment ready for hackathon workflow
+5. Development environment ready for hackathon workflow
 
 ### 2. Development Workflow Flow
 ```
