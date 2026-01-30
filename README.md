@@ -59,7 +59,7 @@ An intelligent assistant that provides:
 
 ### 1. Get Hackathon Sidekick
 ```bash
-git clone https://github.com/yourusername/hackathon-sidekick
+git clone https://github.com/arwicaksono/hackathon-sidekick
 cd hackathon-sidekick
 ```
 
@@ -148,7 +148,6 @@ kiro-cli
 |---------|---------|-------------|
 | `@evaluate-idea` | Analyze project ideas | Before starting development |
 | `@init-project` | Set up Kiro configuration | After idea evaluation |
-| `@quickstart` | Interactive setup wizard | Initial configuration |
 
 ### 📊 **Progress & Documentation**
 
@@ -170,7 +169,7 @@ kiro-cli
 
 #### **Initial Setup**
 ```bash
-@sidekick → @evaluate-idea → @init-project → @quickstart
+@sidekick → @evaluate-idea → @init-project 
 ```
 
 #### **Development Cycle**
@@ -299,11 +298,12 @@ Professional daily development log featuring:
 - ✅ Polish your README.md for professional presentation
 
 ### Development Best Practices
-1. **Start with `@quickstart`** to establish solid foundation
-2. **Use `@prime` at every session start** for context loading
-3. **Update DEVLOG.md continuously** using `@execution-report`
-4. **Run `@code-review-hackathon` regularly** to track your score
-5. **Customize your `.kiro/` directory** to show workflow innovation
+1. **Start with `@sidekick`** to access the main menu and get guided workflows
+2. **Use `@evaluate-idea`** before development to analyze against judging criteria
+3. **Track progress continuously** with `@update-progress` after work sessions
+4. **Maintain documentation** using `@update-devlog` and `@update-readme`
+5. **Run `@progress-report` regularly** to monitor your hackathon score
+6. **Use `@submission-check`** before final submission for validation
 
 ## 🤝 Contributing
 
@@ -357,8 +357,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Get started in 3 simple steps:**
 
 1. **Install Kiro CLI** and clone this repository
-2. **Run `@quickstart`** to configure your project
-3. **Start building** with `@prime` → `@plan-feature` → `@execute`
+2. **Run `@sidekick`** to access the main menu and configure your project
+3. **Start building** with `@evaluate-idea` → `@init-project` → `@update-progress`
 
 **Built with ❤️ using [Kiro CLI](https://kiro.dev) for the Dynamous Kiro Hackathon**
 
